@@ -5,7 +5,7 @@
     "version": "1.0",
 
     //"default_locale": "en",
-    "description": "This extension detects JIRA issue tags in GitHub pull request and commit title, logs, comments, and description fields, and turns them into hyperlinks.",
+    "description": "This extension detects JIRA issue tags in GitHub comments and titles of pull requests, and turns them into hyperlinks.",
     "icons" : {
         "16" : "img/64jira.png",
         "64" : "img/64jira.png",
