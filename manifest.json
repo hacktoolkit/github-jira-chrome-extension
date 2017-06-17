@@ -4,7 +4,6 @@
     "name": "GitHub to JIRA Links",
     "version": "1.0",
 
-    //"default_locale": "en",
     "description": "This extension detects JIRA issue tags in GitHub comments and titles of pull requests, and turns them into hyperlinks.",
     "icons" : {
         "16" : "img/64jira.png",
@@ -33,9 +32,7 @@
     ],
 
     "options_ui": {
-        // Required.
         "page": "src/options.html",
-        // Recommended.
         "chrome_style": true
     },
 
