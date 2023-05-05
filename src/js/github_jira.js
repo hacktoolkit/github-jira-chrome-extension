@@ -15,9 +15,8 @@ if (window.location.hostname.match(/^.*git.*$/)) {
                 elements.forEach((element) => {
                     const text = element.innerHTML;
                     const rewritten = text.replace(
-                        /\[([a-zA-Z]+)-(\d+)\]/,
-                        function (match, issuePrefix, issueNumber) {
-                            const issueId = issuePrefix + '-' + issueNumber;
+                        /([a-zA-Z]+-\d+)/,
+                        function (match, issueId) {
                             const issueUrl = jiraIssueBaseUrl + '/' + issueId;
                             const replacement = `[<a href="${issueUrl}" target="_blank">${issueId}</a>]`;
                             return replacement;
